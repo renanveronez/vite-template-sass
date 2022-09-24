@@ -1,7 +1,16 @@
+import './styles/global.scss';
+import { BrowserRouter } from 'react-router-dom';
+import { Router } from './Router';
+import { Header } from './components/Header';
+
 function App() {
+
   return (
-    <h1>Hello World</h1>
-  )
+    <BrowserRouter>
+      <Header />
+      <Router />
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
